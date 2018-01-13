@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<woss>
+	<gather class="com.briup.ClientImpl.GatherImpl">
+		<resource_path>src/com/briup/file/radwtmp</resource_path>
+	</gather>
+	<client class="com.briup.ClientImpl.ClientImpl">
+		<ip>localhost</ip>
+		<port>9999</port>
+		<backclient_path>ClientBIDRBack</backclient_path>
+	</client>
+	<server class="com.briup.ServerImpl.ServerImpl">
+		<port>9999</port>
+		<backserver_path>DBBIDRBack</backserver_path>
+	</server>
+	<dbstore class="com.briup.ServerImpl.DBStoreImpl">
+		<backdb_path>DBBIDRBack</backdb_path>
+	</dbstore>
+	<backup class="com.briup.Util.BackUpImpl"> 
+		<back_path>src/com/briup/back/</back_path>
+	</backup>
+	<logger class="com.briup.Util.LoggerImpl">
+		<log4j_path>src/log4j.properties</log4j_path>
+	</logger>
+</woss>
